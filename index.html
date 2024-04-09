@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página para fanáticos de Cars">
+    <meta name="keywords" content="cars, rayo, mcqueen, rayomcqueen, mate, sally, cars 1, cars 2, cars 3, pelicula, doc hudson, tienda">
+    
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- FUENTE -->
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+    <!-- TITULO -->
+    <title>TIENDA CARS</title>
+
+
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header>
+            <figure>
+                <img src="img/logo.png" alt="Logo Rayo McQueen">
+            </figure>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#productos">Productos</a>
+                    </li>
+                    <li>
+                        <a href="#noticias">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="#galeria">Galería</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav> 
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- Fondo grande y formulario -->
+        <section id="inicio">
+            <h1>Tienda Oficial Cars</h1>
+            <p>Regístrate para tener más información</p>
+            <form action="#">
+                <input type="email" placeholder="Ingresa tu e-mail">
+                <input type="submit" value="!Quiero Saber Más!">
+            </form>
+        </section>
+
+        <!-- Seccion Productos -->
+        <section id="productos">
+            <h2>Productos Destacados</h2>
+            <p>Estos son nuestros productos destacados</p>
+            <div>
+                <article>
+                    <img src="img/botella.png" alt="Producto botella">
+                    <h3>Botella Térmica</h3>
+                    <h4><span>Precio: $250</span></h4>
+                    <p>Botella Térmica con excelentes diseño ideal para los fanáticos de Cars.</p>
+                </article>
+                <article>
+                    <img src="img/mochila.png" alt="Producto mochila">
+                    <h3>Mochila Infantil</h3>
+                    <h4><span>Precio: $1299</span></h4>
+                    <p>Una mochila espcialmente diseñada para los pequeños fans del Rayo McQueen. Tamaño ideal 
+                        para niños.
+                    </p>
+                </article>
+                <article>
+                    <img src="img/peluche1.png" alt="Producto peluche">
+                    <h3>Peluche RayoMcQueen</h3>
+                    <h4><span>Precio: $376</span></h4>
+                    <p>Peluche del Rayo McQueen ideal para decorar tu habitación. Construido de materiales
+                        suaves y duraderos.
+                    </p>
+                </article>
+            </div>
+            <a href="#">Ver Más Productos</a>
+        </section>
+
+        <!-- Seccion Noticias -->
+        <section id="noticias">
+            <h2>Noticias</h2>
+            <p>Noticias de último momento</p>
+            <div>
+                <article>
+                    <figure>
+                        <img src="img/cars4.png" alt="Cars 4">
+                    </figure>
+                    <h2>Cars 4</h2>
+                    <p>La película Cars 4 podría salir el día 06 de Junio del año 2025.
+                        Luego de una larga espera desde la anterior película (2017), se dice que cars 4 estaría más cerca que nunca.
+                        El directo Brian Fee, confirmó esto en una entrevista con la BBC.
+                    </p>
+                    <a href="#">Ver más</a>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/mate.png" alt="Mate Podria No Estar En Cars 4">
+                    </figure>
+                    <h2>Mate y Cars 4</h2>
+                    <p>El icónico personaje de la película Cars y mejor amigo del Rayo McQueen, podría dejar de formar parte de esta. <br>
+                        <span>Mate</span> <span>Cars 4</span> 
+                    </p>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/sally1.png" alt="Sally modificada">
+                    </figure>
+                    <h2>Sally</h2>
+                    <p>La famosa Sally podría tener un cambio para la siguiente película. Estaría inspirada en un BMW, a diferencia de las películas anteriores. <br>
+                        <span>Sally</span>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seccion Galeria -->
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <p>Mejores fotos de los personajes</p>
+            <div>
+                <figure><img src="img/docHudsonGaleria.png" alt="Doc Hudson"></figure>
+                <figure><img src="img/filmoreGaleria.png" alt="Filmore"></figure>
+                <figure><img src="img/francescoGaleria.png" alt="Francesco Bernoulli"></figure>
+                <figure><img src="img/personajesGaleria.png" alt="Luigi y Guido"></figure>
+                <figure><img src="img/rayoMcQueenGaleria.png" alt="Rayo McQueen"></figure>
+            </div>
+        </section>
+
+        <!-- Seccion Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Contáctate con nosotros. Aquí está nuestra lista de eventos.</p>
+            <div>
+                <form action="#">
+                    <fieldset>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Ingrese Nombre" required>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="Ingrese Apellido" required>
+                        <label for="celular">Celular</label>
+                        <input type="number" id="celular" placeholder="Ingrese Celular" required>
+                        <label for="pais">Pais</label>
+                        <select id="pais">
+                            <option value="seleccione">Seleccione...</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="chile">Chile</option>
+                            <option value="paraguay">Paraguay</option>
+                        </select>
+                        <label for="comentario">Comentarios</label>
+                        <textarea id="comentario" placeholder="Comentarios adicionales" cols="30" rows="5"></textarea>
+                        <input type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+                <table>
+                    <tr>
+                        <th>Evento</th>
+                        <th>Dia</th>
+                        <th>Hora</th>
+                        <th>Precio</th>
+                        <th>Lugar</th>
+                    </tr>
+                    <tr>
+                        <td>Juegos de Cars</td>
+                        <td>22/04/2024</td>
+                        <td>18:00hs</td>
+                        <td>$250</td>
+                        <td>Estadio Centenario</td>
+                    </tr>
+                    <tr>
+                        <td>Cars 1 4D</td>
+                        <td>12/07/2024</td>
+                        <td>20:00hs</td>
+                        <td>$560</td>
+                        <td>Teatro de Verano</td>
+                    </tr>
+                    <tr>
+                        <td>Cars 2 8D</td>
+                        <td rowspan="2">25/09/2024</td>
+                        <td>15:00hs</td>
+                        <td>$500</td>
+                        <td rowspan="2">Antel Arena</td>
+                    </tr>
+                    <tr>
+                        <td>Cars 3 8D</td>
+                        <td>19:00hs</td>
+                        <td>$431</td>
+                    </tr>
+                    <tr>
+                        <td>Simulador de Carreras</td>
+                        <td>06/10/2024</td>
+                        <td>12:00hs</td>
+                        <td>$1200</td>
+                        <td>Punta Carretas Shopping</td>
+                    </tr>
+                    <tr>
+                        <td>Carreras en Karts</td>
+                        <td colspan="2">A confirmar</td>
+                        <td>$300</td>
+                        <td>Montevideo Shopping</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>© 2023 Club de Cars - Creado por Martín Díaz</p>
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </footer>
+
+
+
+
+</body>
+</html>

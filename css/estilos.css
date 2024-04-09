@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Dela Gothic One', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* HEADER */
+
+header{
+    background-color: rgb(191,57,66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+
+    /* Fijar arriba */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header figure{
+    width: 300px;
+    height: 90px;
+}
+
+header figure img{
+    width: 75px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+header nav{
+    width: 900px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+
+header nav ul li a{
+    color: rgb(255,212,134);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 25px;
+}
+
+header nav ul li a:hover{
+    color: rgb(191,57,66);
+    background-color: rgb(255,212,134);
+    border-radius: 20px;
+}
+
+/* MAIN */
+
+/* Color de fondo para todas las secciones */
+main section:nth-of-type(1), main section:nth-of-type(2), main section:nth-of-type(3), main section:nth-of-type(4), main section:nth-of-type(5){
+    background-color: rgb(196, 94, 94);
+    border-bottom: 1px solid black;
+}
+
+
+
+/* Primera seccion */
+
+main section:nth-of-type(1){
+    background-image: url(../img/fondo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section:nth-of-type(1) h1{
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+main section:nth-of-type(1) p{
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 3px;
+}
+
+main section:nth-of-type(1) h1, main section:nth-of-type(1) p{
+    backdrop-filter: blur(1px);
+    margin-top: 40px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+
+main section:nth-of-type(1) form{
+    margin-top: 50px;
+    text-align: center;
+}
+
+main section:nth-of-type(1) input[type=email]{
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+
+
+main section:nth-of-type(1) input[type=submit]{
+    display: block;
+    margin: 60px auto;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    padding: 15px;
+    background-color: black;
+    border-radius: 30px;
+    width: 190px;
+}
+
+main section:nth-of-type(1) input[type=submit]:hover{
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+/* Fin primera sesion */
+
+
+/* Seccion Productos */
+
+
+
+/* h2 y parrafos de seccion noticias, productos, galeria y contacto */
+main section:nth-of-type(2) h2, main section:nth-of-type(2) p, main section:nth-of-type(3) h2, main section:nth-of-type(3) p, main section:nth-of-type(4) p, main section:nth-of-type(4) h2, main section:nth-of-type(5) p, main section:nth-of-type(5) h2{
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(255,212,134);
+    margin-bottom: 10px;
+}
+
+
+main section:nth-of-type(2) div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+main section:nth-of-type(2) div article{
+    background-color: rgb(223, 125, 125);
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid rgb(143, 60, 60);
+    border-radius: 30px;
+}
+main section:nth-of-type(2) div article p, main section:nth-of-type(2) div article h4, main section:nth-of-type(2) div article h3{
+    color: rgb(255,212,134);
+}
+
+
+main section:nth-of-type(2) div article img{
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+
+main section:nth-of-type(2) a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    padding: 15px;
+    background-color: black;
+    border-radius: 30px;
+    width: 250px;
+    text-transform: uppercase;
+    margin: 30px auto;
+}
+
+
+main section:nth-of-type(2) a:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+/* Fin seccion productos */
+
+/* Seccion Noticias */
+
+main section:nth-of-type(3) div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5px;
+    grid-template-areas: "primerNoticia segundaNoticia"
+                         "primerNoticia tercerNoticia";
+    margin-bottom: 10px;
+}
+
+main section:nth-of-type(3) div article:nth-of-type(1){
+    height: auto;
+    background-color: rgb(223, 125, 125);
+    border: 1px solid rgb(143, 60, 60);
+    border-radius: 30px;
+    padding: 10px;
+}
+/* Imagen cars4 */
+main section:nth-of-type(3) div article:nth-of-type(1) figure img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+main section:nth-of-type(3) div article h2, main section:nth-of-type(3) div article p{
+    text-align: left;
+}
+main section:nth-of-type(3) div article:nth-of-type(1) p{
+    padding: 0;
+}
+
+
+
+main section:nth-of-type(3) div article:nth-of-type(1) a{
+    display: block;
+    background-color: rgb(255,212,134);
+    color: rgb(196, 94, 94);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+main section:nth-of-type(3) div article:nth-of-type(1){
+    grid-area: primerNoticia;
+}
+main section:nth-of-type(3) div article:nth-of-type(2){
+    grid-area: segundaNoticia;
+}
+main section:nth-of-type(3) div article:nth-of-type(3){
+    grid-area: tercerNoticia;
+}
+
+main section:nth-of-type(3) div article:nth-of-type(2), main section:nth-of-type(3) div article:nth-of-type(3){
+    height: 255px;
+    display: grid;
+    border: 1px solid rgb(143, 60, 60);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    background-color: rgb(223, 125, 125);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+/* Imagen mate y sally */
+main section:nth-of-type(3) div article:nth-of-type(2) figure, main section:nth-of-type(3) div article:nth-of-type(3) figure{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    text-align: center;
+}
+main section:nth-of-type(3) div article:nth-of-type(2) figure img, main section:nth-of-type(3) div article:nth-of-type(3) figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+
+
+main section:nth-of-type(3) div article:nth-of-type(2) h2, main section:nth-of-type(3) div article:nth-of-type(3) h2{
+    margin-bottom: 1px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+}
+main section:nth-of-type(3) div article:nth-of-type(2) p, main section:nth-of-type(3) div article:nth-of-type(3) p{
+    padding-top: 15px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: left;
+}
+main section:nth-of-type(3) div article p span{
+    display: inline-block;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(255,212,134);
+    color: rgb(196, 94, 94);
+    padding: 3px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+
+/* GALERIA */
+main section:nth-of-type(4) div{
+    background-color: rgb(223, 125, 125);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "quintaImagen quintaImagen terceraImagen primeraImagen"
+                         "quintaImagen quintaImagen segundaImagen segundaImagen"
+                         "cuartaImagen cuartaImagen segundaImagen segundaImagen";
+}
+
+
+main section:nth-of-type(4) div figure img{
+    width: 100%;
+}
+
+main section:nth-of-type(4) div figure:nth-of-type(1) img{
+    height: 200px;
+    border-radius: 0 30px 0 0;
+}
+main section:nth-of-type(4) div figure:nth-of-type(2) img{
+    height: 400px;
+    border-radius: 0 0 30px 0;
+}
+main section:nth-of-type(4) div figure:nth-of-type(3) img{
+    height: 200px;
+}
+main section:nth-of-type(4) div figure:nth-of-type(4) img{
+    height: 200px;
+    border-radius: 0 0 0 30px;
+}
+main section:nth-of-type(4) div figure:nth-of-type(5) img{
+    height: 400px;
+    border-radius: 30px 0 0 0;
+}
+    
+
+
+main section:nth-of-type(4) div figure:nth-of-type(1){
+    grid-area: primeraImagen;
+}
+main section:nth-of-type(4) div figure:nth-of-type(2){
+    grid-area: segundaImagen;
+}
+main section:nth-of-type(4) div figure:nth-of-type(3){
+    grid-area: terceraImagen;
+}
+main section:nth-of-type(4) div figure:nth-of-type(4){
+    grid-area: cuartaImagen;
+}
+main section:nth-of-type(4) div figure:nth-of-type(5){
+    grid-area: quintaImagen;
+}
+
+/* CONTACTO */
+/* Formulario */
+main section:nth-of-type(5) div{
+    background-color: rgb(223, 125, 125);
+    border-radius: 30px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 480px;
+    
+}
+
+main section:nth-of-type(5) div form fieldset{
+    width: 100px;
+    padding: 5px;
+    border: none;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: repeat(2, 280px);
+   
+    
+
+    grid-template-areas: "labelNombre labelApellido"
+                         "inputNombre inputApellido"
+                         "labelCelular labelPais"
+                         "inputCelular selectPais"
+                         "labelComentario labelComentario"
+                         "inputComentario inputComentario"
+                         "botonEnviar botonEnviar";
+
+}
+
+
+/* Nombres grid area */
+main section:nth-of-type(5) div form fieldset label:nth-of-type(1){
+    margin: 10px;
+    grid-area: labelNombre;
+}
+main section:nth-of-type(5) div form fieldset label:nth-of-type(2){
+    margin: 10px;
+    grid-area: labelApellido;
+}
+main section:nth-of-type(5) div form fieldset label:nth-of-type(3){
+    margin: 10px;
+    grid-area: labelCelular;
+}
+main section:nth-of-type(5) div form fieldset label:nth-of-type(4){
+    margin: 10px;
+    grid-area: labelPais;
+}
+main section:nth-of-type(5) div form fieldset label:nth-of-type(5){
+    margin: 10px;
+    grid-area: labelComentario;
+}
+main section:nth-of-type(5) div form fieldset input[type=text]:nth-of-type(1){
+    grid-area: inputNombre;
+}
+main section:nth-of-type(5) div form fieldset input[type=text]:nth-of-type(2){
+    grid-area: inputApellido;
+}
+main section:nth-of-type(5) div form fieldset input[type=number]:nth-of-type(1){
+    grid-area: inputCelular;
+}
+main section:nth-of-type(5) div form fieldset select{
+    grid-area: selectPais;
+}
+
+main section:nth-of-type(5) div form fieldset textarea:nth-of-type(1){
+    grid-area: inputComentario;
+    width: 510px;
+    margin-bottom: 10px;
+    resize: none;
+}
+main section:nth-of-type(5) div form fieldset input[type=submit]{
+    grid-area: botonEnviar;
+}
+
+main section:nth-of-type(5) div form fieldset input[type=submit]{
+    color: rgb(223, 125, 125);
+    background-color: rgb(255,212,134);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 1px solid rgb(223, 125, 125);
+}
+
+main section:nth-of-type(5) div form fieldset input[type=submit]:hover{
+    color: rgb(255,212,134);
+    background-color: rgb(223, 125, 125);
+    border: 1px solid rgb(255,212,134);
+}
+
+main section:nth-of-type(5) div form fieldset input[type=text], main section:nth-of-type(5) div form fieldset input[type=number], main section:nth-of-type(5) div form fieldset textarea, main section:nth-of-type(5) div form fieldset select:nth-of-type(1){
+    width: 230px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+main section:nth-of-type(5) div form fieldset select:nth-of-type(1){
+    width: 260px;
+}
+
+
+
+/* Tabla */
+main section:nth-of-type(5) div table{
+    padding: 15px;
+}
+
+main section:nth-of-type(5) div table th{
+    border: 1px solid rgb(143, 60, 60);
+    background-color: rgb(143, 60, 60);
+}
+main section:nth-of-type(5) div table td{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(196, 94, 94);
+    
+}
+
+/* Footer */
+
+footer{
+    height: auto;
+    background-color: rgb(191,57,66);
+    text-align: center;
+}
+footer p{
+    padding: 15px;
+}
+
+footer nav ul li{
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/sprite.png);
+    display: inline-block;
+    margin: 10px;
+}
+footer nav ul li:nth-of-type(1){
+    background-position: 0px 0px;
+}
+
+footer nav ul li:nth-of-type(2){
+    background-position: -128px 0px;
+}
+
+footer nav ul li:nth-of-type(1):hover{
+    background-position: 0px 64px;
+}
+
+footer nav ul li:nth-of-type(2):hover{
+    background-position: -128px 64px;
+}
